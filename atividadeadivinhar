@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void){
+ int numA=67;
+ int numB=0;
+ char nome[50];
+ puts("Digite seu nome\n");
+ scanf("%s", nome);
+
+  printf("Ola %s, tente adivinhar o numero!\n Insira o numero:", nome);
+  scanf("%d", &numB);
+  if(numB==numA){
+    printf("Parabens %s, voce acertou!!!", nome);
+  }
+  else if(numB>numA){
+    printf("Voce errou %s, o numero e menor", nome);
+  }
+  else if(numB<numA){
+    printf("Voce errou %s, o numero e maior", nome);
+  }
+}
