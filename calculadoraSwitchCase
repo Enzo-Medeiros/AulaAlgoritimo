@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main(){
+    int op;
+    int num1;
+    int num2;
+
+    puts("Digite a opcao desejada:\v (1)soma (2)subtracao (3)multiplicacao (4)divisao (5)resto de divisao");
+    scanf("%d", &op);
+//Switch é o que vai sinalizar qual variável será lida para os casos
+    switch(op){
+//Case é o vai definir qual caso será executado dependendo da variável, sendo "case (Numero):" para variaveis numéricas e "case (Letra):" em casos de variáveis alfabéticas
+        case 1:
+            puts("Voce selecionou soma\v");
+            puts("Insira o primeiro numero:\v");
+            scanf("%d", &num1);
+            puts("Insira o segundo numero:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d", num1+num2);
+//Break é o que vai fazer o código parar de ser lido, caso não tenha o break, ele vai ler todos os Cases abaixo
+            break;
+        case 2:
+            puts("Voce selecionou subtracao\v");
+            puts("Insira o primeiro numero:\v");
+            scanf("%d", &num1);
+            puts("Insira o segundo numero:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d", num1-num2);
+            break;
+        case 3:
+            puts("Voce selecionou multiplicacao\v");
+            puts("Insira o primeiro numero:\v");
+            scanf("%d", &num1);
+            puts("Insira o segundo numero:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d", num1*num2);
+            break;
+        case 4:
+            puts("Voce selecionou divisao\v");
+            puts("Insira o dividendo:\v");
+            scanf("%d", &num1);
+            puts("Insira o divisor:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d", num1/num2);
+            break;
+        case 5:
+            puts("Voce selecionou resto de divisao\v");
+            puts("Insira o dividendo:\v");
+            scanf("%d", &num1);
+            puts("Insira o divisor:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d", num1%num2);
+            break;
+//Default é o equivalente ao else do SwitchCase, se a variável lida for diferente dos casos possíveis, ela será executada
+        default:
+            puts("Opcao invalida");
+    }
+}
