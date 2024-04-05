@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+int tab = 0, i=1;
+//O i funciona como o contador e como o número da tabuada, já o tab é o número cuja tabuada será gerada, quando i for maior que 10, o código para
+    printf("Qual tabuada deseja ver?\n");
+    scanf("%d", &tab);
+    while (i<=10){
+        printf("%d x %d = %d\n", tab, i, tab*i);
+        i++;
+    }
+    
+    
+    return 0;
+}
