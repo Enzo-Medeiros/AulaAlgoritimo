@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+int i = 10;
+//While faz com que enquanto a condição serja verdadeira, o codigo ira continuar se repetindo até a condição deixar de ser, no exemplo, o código vai se repetir até o valor de i ser menor que zero, e cada vez que o código rodar, irá subtrair um do valor de i
+    while(i>=0){
+        printf("%d ", i);
+        i--;
+    }
+    return 0;
+}
