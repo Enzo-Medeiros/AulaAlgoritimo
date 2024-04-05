@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main(){
+int op = 0, num1, num2;
+    while(op!=4){
+        puts("Digite uma das opcoes:\n(1) Soma\n(2) Subtracao\n(3) Multiplicacao\n(4) Sair do programa");
+        scanf("%d", &op);
+    switch(op){
+        case 1:
+            puts("Soma");
+            puts("Insira o primeiro numero:\v");
+            scanf("%d", &num1);
+            puts("Insira o segundo numero:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d\n", num1+num2);
+            break;
+        case 2:
+            puts("Subtracao");
+            puts("Insira o primeiro numero:\v");
+            scanf("%d", &num1);
+            puts("Insira o segundo numero:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d\n", num1-num2);
+            break;
+        case 3:
+            puts("Multiplicacao");
+            puts("Insira o primeiro numero:\v");
+            scanf("%d", &num1);
+            puts("Insira o segundo numero:\v");
+            scanf("%d", &num2);
+            printf("Resultado: %d\n", num1*num2);
+            break;
+        case 4:
+            puts("Finalizando programa, bye bye");
+            break;
+        default:
+            puts("Opcao invalida");
+    }
+    }
+    return 0;
+}
