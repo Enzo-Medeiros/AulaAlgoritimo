@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+int num, soma = 0;
+    do{
+        puts("Insira numeros para somar\nInsira 0 para ");
+        scanf("%d", &num);
+soma+=num;
+    } while(num!=0);
+        printf("Soma: %d", soma);
+    return 0;
+}
