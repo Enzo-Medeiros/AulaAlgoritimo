@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void){
+int i=1, op=0;
+
+   do //o do será executando antes da checagem do while
+   {
+    puts("Digite qualquer numero ou (1) para sair");
+    scanf("%d", &op);
+    puts("Passou");
+   }while (op!=1);
+}   
