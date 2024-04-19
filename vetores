@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+int i;
+                   //Os numeros dentro das chaves são os índices do vetor, que são os valores em cada uma das 5 posições do vetor
+    int vetor[5]; //= {10, 20 ,30 ,40 ,50};
+                   //O vetor só pode ser acessado por suas posições, não todo de uma vez
+        for (i = 0; i<5; i++){
+            printf("Digite o numero %d\n", i+1);
+            scanf("%d", &vetor[i]);
+        }
+        for (i = 0; i< 5; i++){
+             printf("%d ", vetor[i]);
+        }
+        //printf("%d %d %d", vetor[3], vetor[2], vetor[0]); //Como o vetor só pode ser acessado por suas posições, precisa-se especificar a posição para imprimí-la
+}        
