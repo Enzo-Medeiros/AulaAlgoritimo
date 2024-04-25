@@ -11,3 +11,4 @@ char s[10];
         //Após a porcentagem o número é o tamanho do vetor menos 1
     printf("Aprimorado - Foi digitado: %s\n", s);
 }
+2597ENVh6FZS
