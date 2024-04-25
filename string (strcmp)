@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define N 50
+int main(){
+char staticText[N]={"soudev"};
+char senhaUsr[N];
+int ok;
+    printf("Digite a senha:\n");
+    fgets(senhaUsr, N, stdin);
+    fflush(stdin);
+senhaUsr[strcspn(senhaUsr, "\n")] = '\0'; //isso remove o caracter nulo da string
+
+ok=strcmp(staticText, senhaUsr);
+//strcmp é para comparar as duas strings, ele devolve 0 se for igual e um numero diferente de 0 se não for igual
+    if(ok==0){
+        printf("Acesso concedido");
+    } else
+    printf("Acesso negado, morra");
+
+    return 0;
+}
