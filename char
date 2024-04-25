@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+char s[10];
+//    printf("Digite alguma coisa (nao aprimorado)\n");
+//    scanf("%s", s);
+//    fflush(stdin);
+//    printf("Nao aprimorado - Foi digitado: %s\n", s);
+    printf("Digite alguma coisa (aprimorado)\n");
+    scanf("%9[^\n]s", s);
+        //Após a porcentagem o número é o tamanho do vetor menos 1
+    printf("Aprimorado - Foi digitado: %s\n", s);
+}
