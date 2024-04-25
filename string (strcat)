@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define N 30
+int main(){
+char s1[N]={"Algoritimo e"};
+char s2[N]={" Programacao estruturada"};
+    printf("Antes do strcat\n");
+    printf("s1: %s\n", s1); //Algoritimo e
+    printf("s2: %s\n", s2);
+
+    strcat(s1, s2);
+
+    printf("Depois do strcat\n");
+    puts(s1);
+}
