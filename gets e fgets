@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 10
+int main(){
+char s[N];
+    printf("Digite alguma coisa (usando gets):\n");
+    gets(s);
+    fflush(stdin);
+    puts("Resultado: gets");
+    puts(s);
+    puts("--------------");
+
+    printf("Digite alguma coisa (usando fgets):\n");
+    fgets(s, N, stdin);
+    fflush(stdin);
+
+    puts("Resultado: fgets");
+    puts(s);
+}
