@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h> 
+
+#define N 50
+
+ struct _pessoa{ 
+    
+    int idade;
+    float peso;
+    char nome[N];
+}; 
+typedef struct _pessoa Pessoa;
+ int main(){
+
+    Pessoa pessoa = {0,0.0, "Enzo Medeiros"};
+    int n = sizeof(pessoa.nome) / sizeof(pessoa.nome[0]);
+
+        printf("Imprimindo dados de pessoa: ");
+            printf("Idade: %d\n", pessoa.idade);
+            printf("Peso: %.2f\n", pessoa.peso);
+            printf("Nome: %s\n", pessoa.nome);
+}
