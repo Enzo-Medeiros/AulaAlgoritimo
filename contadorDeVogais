@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+#define N 50
+int main() {
+char str[N];
+int vog=0;
+    printf("Digite um texto: ");
+    fgets(str, N, stdin);
+    fflush(stdin);
+    for (int i = 0; str[i] != '\0'; ++i) {
+        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
+            str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {
+            vog++;
+        printf("(%d) - %c\n",i,str[i]);
+        }
+    }
+    
+    printf("Numero de vogais na string: %d\n", vog);
+    return 0;
+}
