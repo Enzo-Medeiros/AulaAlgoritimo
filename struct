@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+struct ponto{ //struct é um tipo de vetor que pode conter outros tipos de dados dentro de sí.
+    int x;
+    int y;
+}
+
+int main() {
+//criando uma instância da struct
+struct ponto ponto1;
+
+//atribuindo o valor aos membros da struct
+ponto1.x = 10;
+ponto1.y = 20;
+
+//acessando e imprimindo os valores
+    printf("Coordenadas: (%d,%d)\n", ponto1.x, ponto1.y);
+    return 0;
+}
