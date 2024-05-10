@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h> 
+
+ struct int1{ 
+    //struct é um tipo de vetor que pode conter outros tipos de dados dentro de sí. 
+    int x; 
+    int y; 
+}; 
+
+struct char1{
+     char nome; 
+}; 
+
+struct sfloat{
+    float peso; 
+}; int main(){
+
+struct int1 int2; 
+struct char1 char2;
+struct sfloat flort;
+
+    int2.x = 10; 
+    int2.y = 20; 
+
+    char2.nome = 'e';
+
+    flort.peso = 94.70;
+
+//acessando e imprimindo os valores 
+    printf("Coordenadas: (%d,%d)\n", int2.x, int2.y); 
+    printf("Inicial do nome: (%c)\n", char2.nome);
+    printf("Peso: (%.2f)\n", flort.peso);
+        return 0; 
+}
