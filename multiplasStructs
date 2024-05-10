@@ -13,11 +13,16 @@ struct char1{
 
 struct sfloat{
     float peso; 
-}; int main(){
+};
+//typedef serve para renomear uma struct e simplificar seu uso para criar uma instância, necessitando somente o uso do novo nome ao invés de ("Struct [nome da struct]").
+typedef struct int1 num;
+typedef struct char1 c;
+typedef struct sfloat f;
+ int main(){
 
-struct int1 int2; 
-struct char1 char2;
-struct sfloat flort;
+num int2; 
+c char2;
+f flort;
 
     int2.x = 10; 
     int2.y = 20; 
