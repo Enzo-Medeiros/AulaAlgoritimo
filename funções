@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h> 
+
+#define N 50
+//void é uma função sem retorno, a em questão também não tem parametros
+void sayHello(void){
+      puts("Hello 1");
+}
+//função sem retorno mas com parâmetro
+void sayHello2(char greet[50]){
+      printf("%s", greet);
+}
+//função com retorno e sem parâmetros
+int soma1(void){
+      return 1+1;
+}
+//função cin retorno e parametros
+int soma2(int num1, int num2){
+      return num1 + num2;
+}
+ int main(void){
+
+      sayHello();
+
+      sayHello2("Hello 2\n");
+//uma função void com retorno precisa de uma variável para guardar o retorno
+      int result = soma1();
+
+      printf("%d\n", result);
+
+      int result2 = soma2(3,3);
+      printf("%d\n", result2);
+}
